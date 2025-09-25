@@ -75,6 +75,17 @@
     </div>
   </div>
 
+  <!-- Modal Confirmação -->
+  <div id="modalConfirm" class="fixed inset-0 flex items-center justify-center bg-black bg-opacity-50">
+    <div class="bg-white p-6 rounded-lg w-80 text-gray-900 dark:bg-gray-800 dark:text-gray-100">
+      <p id="confirmMessage" class="mb-4">Deseja confirmar?</p>
+      <div class="flex justify-end space-x-2"><button id="cancelConfirm"
+          class="px-4 py-2 bg-gray-400 text-black rounded dark:bg-gray-600 dark:text-white">Cancelar</button>
+        <button id="okConfirm" class="px-4 py-2 bg-red-600 text-white rounded dark:bg-red-700">Confirmar</button>
+      </div>
+    </div>
+  </div>
+
   <script type="module" src="/src/main.js"></script>
 </body>
 
