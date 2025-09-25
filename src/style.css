@@ -1,7 +1,7 @@
 @import "tailwindcss";
 
 #modalNova {
-  visibility: hidden;
+  /* visibility: hidden; */
   display: none;
 }
 
