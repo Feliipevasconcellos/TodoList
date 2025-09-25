@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="bliplist icon" href="image/favicon.png" type="image/x-icon" style="width: 1000px;">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Bliplist</title>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body class="bg-gray-100 text-gray-900 dark:bg-gray-900 dark:text-gray-100 min-h-screen flex flex-col">
+
+  <!-- Header -->
+  <header class="p-4 flex justify-between items-center bg-blue-600 text-white dark:bg-gray-800">
+    <img class="w-30" src="./image/Bliplist.png" alt="Logo BlipList">
+    <div id="clock" class="text-lg font-mono"></div>
+  </header>
+
+  <!-- Main -->
+  <main class="flex-1 p-6">
+    <!-- Botão de nova tarefa -->
+    <button id="btnNovaTarefa"
+      class="mb-4 px-4 py-2 bg-green-600 text-white rounded-lg hover:bg-green-700 dark:bg-green-700 dark:hover:bg-green-500">
+      Nova Tarefa
+    </button>
+
+    <!-- Filtros -->
+    <div class="mb-4 space-x-2">
+      <button data-filter="all"
+        class="filter-btn px-3 py-1 bg-gray-300 text-gray-800 rounded dark:bg-gray-700 dark:text-gray-200">
+        Todas
+      </button>
+      <button data-filter="pending"
+        class="filter-btn px-3 py-1 bg-yellow-400 text-black rounded dark:bg-yellow-600 dark:text-white">
+        Pendentes
+      </button>
+      <button data-filter="done"
+        class="filter-btn px-3 py-1 bg-green-400 text-black rounded dark:bg-green-600 dark:text-white">
+        Concluídas
+      </button>
+    </div>
+  </main>
+
+  <script type="module" src="/src/main.js"></script>
+</body>
+
+</html>
