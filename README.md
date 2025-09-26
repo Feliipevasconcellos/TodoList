@@ -1,92 +1,120 @@
-![BlipList tema claro](./image/bliplistlight.png);
-![BlipList tema escuro](./image/bliplistdark.png);
+# 📌 Bliplist – To-Do List
 
-📌 Bliplist – To-Do List
-📖 Descrição do Projeto
+## 📸 Preview
 
-O Bliplist é uma aplicação de To-Do List desenvolvida como atividade da SoulCode, com o objetivo de permitir que o usuário organize suas tarefas do dia a dia de forma simples e intuitiva.
-A aplicação foi construída utilizando Vite (Vanilla JavaScript) e Tailwind CSS, garantindo performance, responsividade e uma interface moderna.
+<p align="center">
+  <b>🌙 Modo Dark</b><br>
+  <img src="image/bliplistdark.png" alt="Preview Dark Mode" width="800">
+</p>
 
-O sistema possibilita criar, listar, concluir, excluir e filtrar tarefas, além de manter todos os dados salvos no LocalStorage para que não sejam perdidos ao recarregar a página.
-Também conta com um relógio digital em tempo real e suporte a tema claro e escuro.
+<p align="center">
+  <b>☀️ Modo Light</b><br>
+  <img src="image/bliplistlight.png" alt="Preview Light Mode" width="800">
+</p>
 
-🛠️ Stacks Utilizadas
+---
 
-⚡ Vite (Vanilla JavaScript) – Ambiente de desenvolvimento rápido e leve
+## 📖 Descrição do Projeto
 
-🎨 Tailwind CSS – Estilização e suporte ao tema Dark/Light
+O **Bliplist** é uma aplicação de **To-Do List** desenvolvida como atividade da **SoulCode**, com o objetivo de permitir que o usuário organize suas tarefas do dia a dia de forma simples e intuitiva.
 
-📜 JavaScript – Lógica da aplicação e manipulação do DOM
+A aplicação foi construída utilizando **Vite (Vanilla JavaScript)** e **Tailwind CSS**, garantindo performance, responsividade e uma interface moderna.
 
-✅ Funcionalidades
-📌 Adicionar Nova Tarefa
+O sistema possibilita **criar, listar, concluir, excluir e filtrar tarefas**, além de manter todos os dados salvos no **LocalStorage** para que não sejam perdidos ao recarregar a página.  
+Também conta com um **relógio digital em tempo real** e suporte a **tema claro e escuro**.
 
-Botão "Nova Tarefa" abre um modal de cadastro.
+---
 
-Campos obrigatórios: Título e Descrição.
+## 🛠️ Stacks Utilizadas
 
-A data de criação é gerada automaticamente no momento do cadastro.
+- ⚡ **Vite (Vanilla JavaScript)** – Ambiente de desenvolvimento rápido e leve
+- 🎨 **Tailwind CSS** – Estilização e suporte ao tema Dark/Light
+- 📜 **JavaScript** – Lógica da aplicação e manipulação do DOM
 
-O status inicial da tarefa é configurado como "Pendente".
+---
 
-Após salvar, a tarefa é registrada no LocalStorage em formato JSON.
+## ✅ Funcionalidades
 
-O modal é fechado automaticamente após o cadastro.
+### 📌 Adicionar Nova Tarefa
 
-📋 Listar Tarefas
+- Botão **"Nova Tarefa"** abre um modal de cadastro.
+- Campos obrigatórios: **Título** e **Descrição**.
+- A **data de criação** é gerada automaticamente no momento do cadastro.
+- O **status inicial** da tarefa é configurado como **"Pendente"**.
+- Após salvar, a tarefa é registrada no **LocalStorage** em formato **JSON**.
+- O modal é fechado automaticamente após o cadastro.
 
-As tarefas são exibidas em uma tabela com as seguintes colunas:
+---
 
-Título
+### 📋 Listar Tarefas
 
-Descrição
+As tarefas são exibidas em uma **tabela** com as colunas:
 
-Data de Criação (dd/mm/yyyy hh:mm)
+- **Título**
+- **Descrição**
+- **Data de Criação** (dd/mm/yyyy hh:mm)
+- **Situação** (Pendente ou Concluída)
+- **Ações** (Concluir / Excluir)
 
-Situação (Pendente ou Concluída)
+🔴 **Excluir**
 
-Ações (Concluir / Excluir)
+- Ao clicar, aparece um modal de confirmação:
+  > "Deseja realmente excluir esta tarefa?"
+- Se confirmado, a tarefa é removida do **LocalStorage**.
 
-Ao clicar em Excluir, aparece um modal de confirmação:
+🟢 **Concluir**
 
-"Deseja realmente excluir esta tarefa?"
+- Ao clicar, aparece um modal de confirmação similar.
+- Se confirmado, o status da tarefa muda para **"Concluída"**.
 
-Se confirmado, a tarefa é removida do LocalStorage.
+A tabela é **atualizada automaticamente** após cada operação.
 
-Ao clicar em Concluir, aparece um modal de confirmação similar:
+---
 
-Se confirmado, o status da tarefa muda para "Concluída".
+### 🔍 Filtro por Status
 
-A tabela é atualizada automaticamente após cada operação.
+- Exibição de tarefas por:
+  - **Todas**
+  - **Pendentes**
+  - **Concluídas**
 
-🔍 Filtro por Status
+---
 
-Botões de filtro permitem exibir tarefas por:
+### 💾 Persistência no LocalStorage
 
-Todas
+- Todas as tarefas são salvas em formato **JSON** no LocalStorage.
+- Ao recarregar a página, as tarefas continuam registradas.
 
-Pendentes
+---
 
-Concluídas
+### ⏰ Relógio Digital em Tempo Real
 
-💾 Persistência no LocalStorage
+- Localizado no canto superior direito.
+- Exibe a hora no formato **HH:mm:ss**.
+- Atualiza automaticamente a cada segundo.
 
-Todas as tarefas são salvas em formato JSON no LocalStorage.
+---
 
-Ao recarregar a página, as tarefas continuam registradas.
+### 🌙☀️ Tema Claro/Escuro (Desafio Extra)
 
-⏰ Relógio Digital em Tempo Real
+- Alternância entre **Dark Mode** e **Light Mode** com Tailwind CSS.
+- Preferência do usuário é salva no **LocalStorage**.
+- Interface se adapta dinamicamente ao tema escolhido.
 
-Localizado no canto superior direito.
+---
 
-Exibe a hora no formato HH:mm:ss.
+## 🚀 Como Executar o Projeto
 
-Atualiza automaticamente a cada segundo.
+```bash
+# Clonar o repositório
+git clone <url-do-repositorio>
 
-🌙☀️ Tema Claro/Escuro (Desafio Extra)
+# Entrar na pasta do projeto
+cd bliplist
 
-Alternância entre Dark Mode e Light Mode com Tailwind CSS.
+# Instalar dependências
+npm install
 
-Preferência do usuário é salva no LocalStorage.
-
-Interface se adapta dinamicamente ao tema escolhido.
+# Rodar o projeto
+npm run dev
+```
