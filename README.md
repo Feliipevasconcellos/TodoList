@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 # 📌 Bliplist – To-Do List
+=======
+![BlipList tema claro](./image/bliplistlight.png)
+![BlipList tema escuro](./image/bliplistdark.png)
+>>>>>>> aad8963628c288676fa41d6147e080090650e1a4
 
 ## 📸 Preview
 
