@@ -46,8 +46,8 @@ function renderTasks() {
       const row = document.createElement("tr");
 
       row.className = isDone
-        ? "bg-green-100 text-gray-500 line-through" // estilo concluída
-        : "bg-white dark:bg-gray-800"; // estilo normal
+        ? "bg-green-300 text-gray-500 line-through" // estilo concluída
+        : "bg-white dark:bg-gray-700"; // estilo normal
 
       row.innerHTML = `
         <td class="p-2">${task.titulo}</td>
