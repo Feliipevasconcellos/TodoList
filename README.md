@@ -1,5 +1,5 @@
-![BlipList tema claro](./image/bliplistlight.png);
-![BlipList tema escuro](./image/bliplistdark.png);
+![BlipList tema claro](./image/bliplistlight.png)
+![BlipList tema escuro](./image/bliplistdark.png)
 
 📌 Bliplist – To-Do List
 📖 Descrição do Projeto
